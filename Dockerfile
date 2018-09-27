@@ -14,7 +14,10 @@ ENV PYTHONPATH=/usr/local/lib/python3.5/site-packages
 
 VOLUME ["/tmp/run/docker.sock"]
 
+
 ENV DOCKER_BASE_URL="unix://tmp/run/docker.sock"
+# Time delta in seconds
+ENV TIME_DELTA="30" 
 ENV CLUSTER_NAME=""
 ENV BASE_IMAGE_NAME=""
 ENV BASE_IMAGE_SUFFIX=""
